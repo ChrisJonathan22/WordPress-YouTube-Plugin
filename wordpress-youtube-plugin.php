@@ -9,4 +9,9 @@ Author: Chris Jonathan
 Author URI: https://www.chrisjonathan.co.uk
 */
 
+// Exit if accessed directly
+if(!defined('ABSPATH')) {
+    exit;
+}
+
 ?>
