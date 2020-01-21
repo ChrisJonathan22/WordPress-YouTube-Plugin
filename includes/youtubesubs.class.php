@@ -25,6 +25,7 @@ add_action( 'wp_dashboard_setup', 'wporg_add_dashboard_widgets' );
 function wporg_dashboard_widget_render() {
     // Display whatever you want to show.
     esc_html_e( "Howdy! I'm a great Dashboard Widget.", "wporg" );
+    echo "Hello from YTS widget";
 }
 
 
