@@ -1,8 +1,4 @@
-<?php 
-
-
-
-
+<?php
 /**
  * Add a widget to the dashboard.
  *
@@ -26,10 +22,12 @@ function wporg_dashboard_widget_render() {
     // Display whatever you want to show.
     esc_html_e( "Howdy! I'm a great Dashboard Widget.", "wporg" );
     echo "Hello from YTS widget";
+
+?>
+
+    <label for="<?php echo esc_attr( $this->get_field('title')); ?>">
+        <?php esc_attr_e('Title', 'yts_domain'); ?>
+    </label>
+<?php
 }
-
-
-
-
-
 ?>
