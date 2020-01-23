@@ -17,4 +17,15 @@ if(!defined('ABSPATH')) {
 // Load Scripts
 require_once(plugin_dir_path(__FILE__) . '/includes/youtubesubs-scripts.php');
 
+// Load Class
+require_once(plugin_dir_path(__FILE__). '/includes/youtubesubs.class.php');
+
+// Register Widget
+function register_youtubesubs() {
+    register_widget('youtubesubs_widget');
+}
+
+// Hook in function
+add_action('widget_init', 'register_youtubesubs');
+
 ?>
